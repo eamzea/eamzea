@@ -1,20 +1,42 @@
 import React from "react";
 import { Row, Col, Image, Button } from "react-bootstrap";
-import RubberBand from "react-reveal/RubberBand";
+import Bounce from "react-reveal/Bounce";
 import Flip from "react-reveal/Flip";
 
 const Home = () => {
+  const openWindow = (e) => {
+    switch (e.target.id) {
+      case "FrontRepoLendt":
+        return window.open("https://github.com/eamzea/Presta-Front", "_blank");
+      case "Lendt":
+        return window.open("https://lendt.herokuapp.com/", "_blank");
+      case "BackRepoLendt":
+        return window.open("https://github.com/eamzea/Presta-Server", "_blank");
+      case "RepoMedik+":
+        return window.open("https://github.com/eamzea/mediApp", "_blank");
+      case "Medik+":
+        return window.open("https://medikplus.herokuapp.com/", "_blank");
+      case "RepoTracker":
+        return window.open(
+          "https://github.com/eamzea/ReactNavigationGeoApp",
+          "_blank"
+        );
+      case "Instagram":
+        return window.open("https://www.instagram.com/eamzdev/", "_blank");
+    }
+  };
+
   return (
     <Row className="justify-content-center">
       <Col xs={10}>
-        <RubberBand delay={2100}>
+        <Bounce delay={2100}>
           <p className="titles text-white title-home">Projects</p>
-        </RubberBand>
+        </Bounce>
       </Col>
       <Col xs={12}>
-        <RubberBand delay={2200}>
+        <Bounce delay={2200}>
           <p className="titles text-white h2">Ironhack Projects</p>
-        </RubberBand>
+        </Bounce>
       </Col>
       <Col lg={6} xs={12} className="text-center">
         <Flip top delay={2300}>
@@ -23,39 +45,27 @@ const Home = () => {
             Web App to search stuffs and contact its owner
           </p>
           <div className="d-flex justify-content-around align-items-center">
-            <Button
-              variant="light"
-              size="sm"
-              className="texts"
-              onClick={() => {
-                window.open("https://github.com/eamzea/Presta-Front", "_blank");
-              }}
+            <button
+              className="texts eamz-btn lendt-btn"
+              id="FrontRepoLendt"
+              onClick={openWindow}
             >
               Front Repo
-            </Button>
-            <Button
-              variant="light"
-              size="sm"
-              className="texts"
-              onClick={() => {
-                window.open("https://lendt.herokuapp.com/", "_blank");
-              }}
+            </button>
+            <button
+              className="texts eamz-btn lendt-btn"
+              id="Lendt"
+              onClick={openWindow}
             >
               Visit
-            </Button>
-            <Button
-              variant="light"
-              size="sm"
-              className="texts"
-              onClick={() => {
-                window.open(
-                  "https://github.com/eamzea/Presta-Server",
-                  "_blank"
-                );
-              }}
+            </button>
+            <button
+              className="texts eamz-btn lendt-btn"
+              id="BackRepoLendt"
+              onClick={openWindow}
             >
               Back Repo
-            </Button>
+            </button>
           </div>
           <Image
             src="./images/lendt-project.png"
@@ -74,26 +84,20 @@ const Home = () => {
             Web App to search doctors and schedule an appointment
           </p>
           <div className="d-flex justify-content-around align-items-center">
-            <Button
-              variant="light"
-              size="sm"
-              className="texts"
-              onClick={() => {
-                window.open("https://github.com/eamzea/mediApp", "_blank");
-              }}
+            <button
+              className="texts eamz-btn medik-btn"
+              id="RepoMedik+"
+              onClick={openWindow}
             >
               Repo
-            </Button>
-            <Button
-              variant="light"
-              size="sm"
-              className="texts"
-              onClick={() => {
-                window.open("https://medikplus.herokuapp.com/", "_blank");
-              }}
+            </button>
+            <button
+              className="texts eamz-btn medik-btn"
+              id="Medik+"
+              onClick={openWindow}
             >
               Visit
-            </Button>
+            </button>
           </div>
           <Image
             src="./images/medik-project.png"
@@ -106,26 +110,32 @@ const Home = () => {
         </Flip>
       </Col>
       <Col xs={10}>
-        <RubberBand delay={2500}>
+        <Bounce delay={2500}>
           <p className="titles text-white title-home">Mobile projects</p>
-        </RubberBand>
+        </Bounce>
       </Col>
       <Col xs={12}>
-        <RubberBand delay={2600}>
+        <Bounce delay={2600}>
           <p className="titles text-white h2">React Native Projects</p>
-        </RubberBand>
+        </Bounce>
       </Col>
       <Col lg={6} xs={12} className="text-center">
         <Flip top delay={2700}>
-          <p className="titles h3 text-white text-center lendt-title">
+          <p className="titles h3 text-white text-center mobileApp-title">
             Tracker APP
           </p>
           <p className="texts text-white text-center">
             Mobile App to save our tracks
           </p>
-          <Button variant="light" size="sm" className="texts my-3">
-            Repo
-          </Button>
+          <div className="d-flex justify-content-center align-items-center my-3">
+            <button
+              className="texts eamz-btn mobileApp-btn"
+              id="RepoTracker"
+              onClick={openWindow}
+            >
+              Repo
+            </button>
+          </div>
           <video loop autoPlay className="videos-projects">
             <source src="./images/tracker.mp4" type="video/mp4" />
           </video>
@@ -133,22 +143,28 @@ const Home = () => {
       </Col>
       <Col xs={12} className="margin-bottom-footer">
         <Row>
-          <Col xs={4} className="d-flex flex-column justify-content-center">
-            <RubberBand delay={2800}>
-              <p className="titles text-white title-home">Hobbies</p>
-              <p className="titles text-white h2">Games</p>
-              <Button variant="light" size="sm" className="texts my-3">
-                Follow Me !
-              </Button>
-            </RubberBand>
-          </Col>
-          <Col xs={8} className="text-center">
-            <Flip top delay={2900}>
+          <Col xs={7} className="text-center">
+            <Flip top delay={2100}>
               <Image
                 src="./images/instagram-profile.png"
                 className="instagram-img my-3"
               />
             </Flip>
+          </Col>
+          <Col xs={5} className="d-flex flex-column justify-content-center">
+            <Bounce delay={2000}>
+              <p className="titles text-white title-home">Hobbies</p>
+              <p className="titles text-white h2">Games</p>
+              <div className="d-flex justify-content-center align-items-center">
+                <button
+                  className="instagram-btn eamz-btn texts"
+                  id="Instagram"
+                  onClick={openWindow}
+                >
+                  Follow Me !
+                </button>
+              </div>
+            </Bounce>
           </Col>
         </Row>
       </Col>

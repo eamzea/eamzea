@@ -57,9 +57,7 @@ const Professional = () => {
             Social media administrator
           </p>
           <div className="d-flex justify-content-center align-items-center">
-            <button size="sm" className="texts maikai-btn">
-              See designs
-            </button>
+            <button className="texts eamz-btn maikai-btn">See designs</button>
           </div>
         </Flip>
       </Col>
@@ -76,9 +74,7 @@ const Professional = () => {
             Create company web page on HTML/CSS/JS/Bootstrap/jQuery
           </p>
           <div className="d-flex justify-content-center align-items-center">
-            <button size="sm" className="texts promasa-btn">
-              See website
-            </button>
+            <button className="texts eamz-btn promasa-btn">See website</button>
           </div>
         </Flip>
       </Col>
@@ -95,7 +91,7 @@ const Professional = () => {
             Create company web page on React/Bootstrap
           </p>
           <div className="d-flex justify-content-center align-items-center">
-            <button size="sm" className="texts digitalkey-btn">
+            <button className="texts eamz-btn digitalkey-btn">
               See website
             </button>
           </div>

@@ -6,6 +6,29 @@
   font-family: "Roboto", sans-serif;
 }
 
+.eamz-btn {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s;
+}
+
+.eamz-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 10px #000000;
+}
+
+.eamz-btn:focus {
+  box-shadow: inset 0px 0px 5px 0px rgba(255, 255, 255, 0.25);
+  transform: scale(0.95);
+  outline: none;
+}
+
+.eamz-btn:active {
+  outline: none;
+}
+
 #root {
   display: flex;
 }
@@ -112,16 +135,6 @@
   }
 }
 
-.medik-title {
-  background: linear-gradient(
-    270deg,
-    rgba(162, 3, 3, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .lendt-title {
   background: linear-gradient(
     270deg,
@@ -132,17 +145,87 @@
   -webkit-text-fill-color: transparent;
 }
 
+.lendt-btn {
+  background: linear-gradient(
+    90deg,
+    rgba(52, 58, 64, 1) 0%,
+    rgba(52, 58, 64, 0.25) 100%
+  );
+}
+
+.medik-title {
+  background: linear-gradient(
+    270deg,
+    rgba(162, 3, 3, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.medik-btn {
+  background: linear-gradient(
+    90deg,
+    rgba(162, 3, 3, 1) 0%,
+    rgba(162, 3, 3, 0.25) 100%
+  );
+}
+
 .projects-img {
   width: 300px;
+}
+
+.mobileApp-title {
+  background: linear-gradient(
+    90deg,
+    rgba(97, 218, 251, 1) 0%,
+    rgba(97, 218, 251, 0.25) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mobileApp-btn {
+  background: linear-gradient(
+    90deg,
+    rgba(97, 218, 251, 1) 0%,
+    rgba(97, 218, 251, 0.25) 100%
+  );
+}
+
+.videos-projects {
+  border-radius: 5px;
+  width: 200px;
 }
 
 .instagram-img {
   width: 200px;
 }
 
-.videos-projects {
-  width: 200px;
+.instagram-btn {
+  background: linear-gradient(
+    45deg,
+    rgba(248, 197, 96, 1) 0%,
+    rgba(161, 66, 184, 1) 100%
+  );
 }
+
+.instagram-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 10px #000000;
+}
+
+.instagram-btn:focus {
+  box-shadow: inset 0px 0px 5px 0px rgba(255, 255, 255, 0.25);
+  transform: scale(0.95);
+  outline: none;
+}
+
+.instagram-btn:active {
+  outline: none;
+}
+
+/* Academic styles page */
 
 .unitec-title {
   font-size: 40px;
@@ -169,6 +252,8 @@
 .academic-imgs {
   width: 200px;
 }
+
+/* Professional styles page */
 
 .ids-title {
   font-size: 40px;
@@ -209,11 +294,6 @@
     rgba(246, 205, 170, 1) 25%,
     rgba(217, 167, 190, 1) 75%
   );
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
-  transition: all 0.5s;
 }
 
 .maikai-btn:hover {
@@ -248,11 +328,6 @@
     rgba(12, 79, 157, 1) 25%,
     rgba(12, 79, 157, 0.25) 100%
   );
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
-  transition: all 0.5s;
 }
 
 .promasa-btn:hover {
@@ -287,11 +362,6 @@
     rgba(43, 105, 113, 1) 25%,
     rgba(43, 105, 113, 0.25) 100%
   );
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
-  transition: all 0.5s;
 }
 
 .digitalkey-btn:hover {
@@ -308,6 +378,8 @@
 .digitalkey-btn:active {
   outline: none;
 }
+
+/* Information styles page */
 
 .title-info {
   font-size: 48px;
