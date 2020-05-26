@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Image, Button } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 import Bounce from "react-reveal/Bounce";
 import Flip from "react-reveal/Flip";
 
@@ -23,6 +23,8 @@ const Home = () => {
         );
       case "Instagram":
         return window.open("https://www.instagram.com/eamzdev/", "_blank");
+      default:
+        return null;
     }
   };
 
@@ -137,7 +139,10 @@ const Home = () => {
             </button>
           </div>
           <video loop autoPlay className="videos-projects">
-            <source src="./images/tracker.mp4" type="video/mp4" />
+            <source
+              src="https://res.cloudinary.com/dsrp4vbij/video/upload/v1590528106/EAMZ/tracker_uykhpt.mp4"
+              type="video/mp4"
+            />
           </video>
         </Flip>
       </Col>
