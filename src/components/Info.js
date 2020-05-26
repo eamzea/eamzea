@@ -29,6 +29,13 @@ const Info = () => {
     }
   };
 
+  const openFile = () => {
+    window.open(
+      "https://res.cloudinary.com/dsrp4vbij/image/upload/v1590528649/EAMZ/EAMZ-FullStack_oyq6k7.pdf",
+      "_blank"
+    );
+  };
+
   return (
     <Row className="justify-content-center">
       <Col xs={12} className="my-3">
@@ -114,7 +121,12 @@ const Info = () => {
         className="margin-bottom-footer d-flex justify-content-center align-items-center"
       >
         <Flip top delay={1400}>
-          <Button variant="light" size="lg" className="texts cv-button-info">
+          <Button
+            variant="light"
+            size="lg"
+            className="texts cv-button-info"
+            onClick={openFile}
+          >
             Click Me
           </Button>
         </Flip>

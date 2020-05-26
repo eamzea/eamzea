@@ -4,6 +4,20 @@ import RubberBand from "react-reveal/RubberBand";
 import Flip from "react-reveal/Flip";
 
 const Professional = () => {
+  const viewPage = (e) => {
+    if (e.target.id === "digital") {
+    } else if (e.target.id === "promasa") {
+    }
+    window.open("");
+  };
+
+  const openFile = () => {
+    window.open(
+      "https://res.cloudinary.com/dsrp4vbij/image/upload/v1590528830/EAMZ/maikaiDesign_emmed6.pdf",
+      "_blank"
+    );
+  };
+
   return (
     <Row className="justify-content-center">
       <Col xs={10} className="my-3">
@@ -57,7 +71,9 @@ const Professional = () => {
             Social media administrator
           </p>
           <div className="d-flex justify-content-center align-items-center">
-            <button className="texts eamz-btn maikai-btn">See designs</button>
+            <button className="texts eamz-btn maikai-btn" onClick={openFile}>
+              See designs
+            </button>
           </div>
         </Flip>
       </Col>
@@ -74,7 +90,13 @@ const Professional = () => {
             Create company web page on HTML/CSS/JS/Bootstrap/jQuery
           </p>
           <div className="d-flex justify-content-center align-items-center">
-            <button className="texts eamz-btn promasa-btn">See website</button>
+            <button
+              id="promasa"
+              className="texts eamz-btn promasa-btn"
+              onClick={viewPage}
+            >
+              See website
+            </button>
           </div>
         </Flip>
       </Col>
@@ -91,7 +113,11 @@ const Professional = () => {
             Create company web page on React/Bootstrap
           </p>
           <div className="d-flex justify-content-center align-items-center">
-            <button className="texts eamz-btn digitalkey-btn">
+            <button
+              id="digital"
+              className="texts eamz-btn digitalkey-btn"
+              onClick={viewPage}
+            >
               See website
             </button>
           </div>
