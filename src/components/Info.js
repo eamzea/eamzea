@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Row, Col, InputGroup, FormControl, Button } from "react-bootstrap";
+import {
+  Row,
+  Col,
+  InputGroup,
+  FormControl,
+  Button,
+  Image,
+} from "react-bootstrap";
 import RubberBand from "react-reveal/RubberBand";
 import Flip from "react-reveal/Flip";
 import Bounce from "react-reveal/Bounce";
@@ -34,6 +41,19 @@ const Info = () => {
       "https://res.cloudinary.com/dsrp4vbij/image/upload/v1590528649/EAMZ/EAMZ-FullStack_oyq6k7.pdf",
       "_blank"
     );
+  };
+
+  const openWindow = (e) => {
+    switch (e.target.name) {
+      case "linkedin":
+        return window.open("https://www.linkedin.com/in/eamzea/", "_blank");
+      case "github":
+        return window.open("https://github.com/eamzea", "_blank");
+      case "insta":
+        return window.open("https://www.instagram.com/eamzdev/", "_blank");
+      default:
+        return null;
+    }
   };
 
   return (
@@ -97,17 +117,67 @@ const Info = () => {
       <Col xs={12} className="d-flex justify-content-center align-items-center">
         {isReady() ? (
           <Bounce top>
-            <Button variant="light" size="lg" className="texts">
-              Send
-            </Button>
+            <button className="texts eamz-btn ready-btn px-5 py-3">
+              I'm Ready
+            </button>
           </Bounce>
         ) : (
           <Fade big>
             <Button variant="light" size="sm" disabled className="texts">
-              Send
+              Not Ready
             </Button>
           </Fade>
         )}
+      </Col>
+      <Col xs={12} className="my-3">
+        <RubberBand>
+          <p className="titles text-center text-white title-info">
+            Social Accounts
+          </p>
+        </RubberBand>
+      </Col>
+      <Col xs={12} className="d-flex justify-content-around align-items-center">
+        <Flip top delay={1400}>
+          <div>
+            <button
+              name="github"
+              className="texts eamz-btn github-btn px-5 py-3"
+              onClick={openWindow}
+            >
+              <Image
+                name="github"
+                src="./images/github-icon.png"
+                className="social-icon"
+              />
+            </button>
+          </div>
+          <div>
+            <button
+              name="linkedin"
+              className="texts eamz-btn linkedin-btn px-5 py-3"
+              onClick={openWindow}
+            >
+              <Image
+                name="linkedin"
+                src="./images/linkedin-icon.png"
+                className="social-icon"
+              />
+            </button>
+          </div>
+          <div>
+            <button
+              name="insta"
+              className="texts eamz-btn instagram-btn px-5 py-3"
+              onClick={openWindow}
+            >
+              <Image
+                name="insta"
+                src="./images/instagram-icon.png"
+                className="social-icon"
+              />
+            </button>
+          </div>
+        </Flip>
       </Col>
       <Col xs={12} className="my-3">
         <RubberBand>
@@ -121,14 +191,9 @@ const Info = () => {
         className="margin-bottom-footer d-flex justify-content-center align-items-center"
       >
         <Flip top delay={1400}>
-          <Button
-            variant="light"
-            size="lg"
-            className="texts cv-button-info"
-            onClick={openFile}
-          >
+          <button className="texts cv-btn eamz-btn" onClick={openFile}>
             Click Me
-          </Button>
+          </button>
         </Flip>
       </Col>
     </Row>

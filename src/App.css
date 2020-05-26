@@ -402,10 +402,38 @@
   resize: none;
 }
 
-.cv-button-info {
-  transition: all 0.5s !important;
+.ready-btn {
+  background: radial-gradient(
+    circle,
+    rgba(164, 36, 59, 1) 0%,
+    rgba(164, 36, 59, 0.25) 100%
+  );
 }
 
-.cv-button-info:hover {
-  transform: scale(1.1);
+.linkedin-btn {
+  background: linear-gradient(
+    90deg,
+    rgba(41, 119, 181, 1) 0%,
+    rgba(40, 62, 74, 1) 100%
+  );
+}
+
+.github-btn {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+}
+
+.social-icon {
+  width: 40px;
+}
+
+.cv-btn {
+  background: radial-gradient(
+    circle,
+    rgba(254, 95, 85, 1) 0%,
+    rgba(254, 95, 85, 0.5) 100%
+  );
 }
