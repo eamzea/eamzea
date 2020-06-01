@@ -6,9 +6,10 @@ import Flip from "react-reveal/Flip";
 const Professional = () => {
   const viewPage = (e) => {
     if (e.target.id === "digital") {
+      window.open("https://digital-key.herokuapp.com/", "_blank");
     } else if (e.target.id === "promasa") {
+      window.open("https://promasa-sjt.herokuapp.com/", "_blank");
     }
-    window.open("");
   };
 
   const openFile = () => {
