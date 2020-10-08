@@ -58,12 +58,12 @@ const Projects = () => {
         </Bounce>
       </Col>
       <Col xs={12}>
-        <Bounce delay={2200}>
+        <Bounce delay={500}>
           <p className="titles text-white h2">Ironhack Projects</p>
         </Bounce>
       </Col>
       <Col lg={6} xs={12} className="text-center">
-        <Flip top delay={600}>
+        <Flip top delay={500}>
           <p className="titles h3 text-white text-center lendt-title">Lendt</p>
           <p className="texts text-white text-center">
             Web App to search stuffs and contact its owner
@@ -93,7 +93,7 @@ const Projects = () => {
         </Flip>
       </Col>
       <Col lg={6} xs={12} className="text-center">
-        <Flip top delay={700}>
+        <Flip top delay={500}>
           <p className="titles h3 text-white text-center medik-title">Medik+</p>
           <p className="texts text-white text-center">
             Web App to search doctors and schedule an appointment
@@ -123,12 +123,12 @@ const Projects = () => {
         </Flip>
       </Col>
       <Col xs={12}>
-        <Bounce delay={2200}>
+        <Bounce delay={500}>
           <p className="titles text-white h2">Personal Projects</p>
         </Bounce>
       </Col>
       <Col lg={6} xs={12} className="text-center">
-        <Flip top delay={600}>
+        <Flip top delay={500}>
           <p className="titles h3 text-white text-center calendar-title">
             Calendar
           </p>
@@ -154,27 +154,27 @@ const Projects = () => {
             </button>
           </div>
           <Image
-            src="./images/lendt-project.png"
+            src="./images/calendar-login.png"
             className="projects-img my-3"
           />
           <Image
-            src="./images/lendt-project1.png"
+            src="./images/calendar-view.png"
             className="projects-img my-3"
           />
         </Flip>
       </Col>
       <Col xs={10}>
-        <Bounce delay={800}>
+        <Bounce delay={500}>
           <p className="titles text-white title-home">Mobile projects</p>
         </Bounce>
       </Col>
       <Col xs={12}>
-        <Bounce delay={900}>
+        <Bounce delay={500}>
           <p className="titles text-white h2">React Native Projects</p>
         </Bounce>
       </Col>
       <Col lg={6} xs={12} className="text-center">
-        <Flip top delay={2700}>
+        <Flip top delay={500}>
           <p className="titles h3 text-white text-center mobileApp-title">
             Tracker APP
           </p>
@@ -189,7 +189,7 @@ const Projects = () => {
               Repo
             </button>
           </div>
-          <video loop className="videos-projects">
+          <video loop className="videos-projects" controls>
             <source
               src="https://res.cloudinary.com/dsrp4vbij/video/upload/v1590528106/EAMZ/tracker_uykhpt.mp4"
               type="video/mp4"
@@ -198,7 +198,7 @@ const Projects = () => {
         </Flip>
       </Col>
       <Col lg={6} xs={12} className="text-center">
-        <Flip top delay={2700}>
+        <Flip top delay={500}>
           <p className="titles h3 text-white text-center mobileApp-title">
             Scratch Game APP
           </p>
@@ -211,7 +211,7 @@ const Projects = () => {
               Repo
             </button>
           </div>
-          <video loop className="videos-projects">
+          <video loop className="videos-projects" controls>
             <source
               src="https://res.cloudinary.com/dsrp4vbij/video/upload/v1602122642/EAMZ/ScratchGame_cloim1.mov"
               type="video/mp4"
@@ -222,7 +222,7 @@ const Projects = () => {
       <Col xs={12} className="margin-bottom-footer">
         <Row>
           <Col xs={7} className="text-center">
-            <Flip top delay={1000}>
+            <Flip top delay={500}>
               <Image
                 src="./images/instagram-profile.png"
                 className="instagram-img my-3"
@@ -230,7 +230,7 @@ const Projects = () => {
             </Flip>
           </Col>
           <Col xs={5} className="d-flex flex-column justify-content-center">
-            <Bounce delay={1100}>
+            <Bounce delay={500}>
               <p className="titles text-white title-home">Hobbies</p>
               <p className="titles text-white h2">Games</p>
               <div className="d-flex justify-content-center align-items-center">

@@ -42,7 +42,7 @@ const Info = () => {
 
   const openFile = () => {
     window.open(
-      "https://res.cloudinary.com/dsrp4vbij/image/upload/v1590528649/EAMZ/EAMZ-FullStack_oyq6k7.pdf",
+      "https://res.cloudinary.com/dsrp4vbij/image/upload/v1602125425/EAMZ/eamz-fullstack-eng_l9nyst.pdf",
       "_blank"
     );
   };

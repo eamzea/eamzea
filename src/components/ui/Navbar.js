@@ -1,15 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Row, Col, Image } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { pathname } = useLocation();
+
   return (
     <Col lg={2} xs={12} className="fix-col">
       <Row className="row-navbar justify-content-between align-items-center">
         <Col lg={12} xs={2} className="text-center">
           <Fade left cascade delay={1000}>
-            <Link to="/">
+            <Link to="/" className={`${pathname === "/" && "active"}`}>
               <Image
                 className="link-home"
                 src="./images/home.svg"
@@ -20,7 +22,11 @@ const Navbar = () => {
         </Col>
         <Col lg={12} xs={2} className="text-center">
           <Fade left cascade delay={1250}>
-            <Link to="/projects">
+            <Link
+              to="/projects"
+              className={`link-home ${
+                pathname.includes("projects") && "active"
+              }`}>
               <Image
                 className="link-home"
                 src="./images/project.svg"
@@ -31,7 +37,9 @@ const Navbar = () => {
         </Col>
         <Col lg={12} xs={2} className="text-center">
           <Fade left cascade delay={1500}>
-            <Link to="/academic">
+            <Link
+              to="/academic"
+              className={`${pathname.includes("academic") && "active"}`}>
               <Image
                 className="link-home"
                 src="./images/school.svg"
@@ -42,7 +50,11 @@ const Navbar = () => {
         </Col>
         <Col lg={12} xs={2} className="text-center">
           <Fade left cascade delay={1750}>
-            <Link to="/professional">
+            <Link
+              to="/professional"
+              className={`link-home ${
+                pathname.includes("professional") && "active"
+              }`}>
               <Image
                 className="link-home"
                 src="./images/work.svg"
@@ -53,7 +65,9 @@ const Navbar = () => {
         </Col>
         <Col lg={12} xs={2} className="text-center">
           <Fade left cascade delay={2000}>
-            <Link to="/information">
+            <Link
+              to="/information"
+              className={`${pathname.includes("information") && "active"}`}>
               <Image
                 className="link-home"
                 src="./images/info.svg"
