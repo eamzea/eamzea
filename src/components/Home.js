@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import RubberBand from "react-reveal/RubberBand";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Row className="justify-content-center">
       <Col xs={10} className="my-3">

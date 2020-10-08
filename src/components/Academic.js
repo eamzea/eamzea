@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import RubberBand from "react-reveal/RubberBand";
 import Flip from "react-reveal/Flip";
 
 const Academic = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Row className="justify-content-center">
       <Col xs={10} className="my-3">
@@ -15,7 +19,7 @@ const Academic = () => {
         <RubberBand>
           <p className="titles text-white h1">FullStack Web Developer</p>
         </RubberBand>
-        <Flip top delay={2400}>
+        <Flip top delay={500}>
           <p className="titles text-white text-center ironhack-title">
             Ironhack
           </p>
@@ -30,7 +34,7 @@ const Academic = () => {
         <RubberBand>
           <p className="titles text-white h1">Psychologist Degree</p>
         </RubberBand>
-        <Flip top delay={2400}>
+        <Flip top delay={500}>
           <p className="titles text-center unitec-title">UNITEC</p>
           <p className="texts text-white text-center h3">2013 - 2016</p>
           <Image

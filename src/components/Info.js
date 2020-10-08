@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Row,
   Col,
@@ -18,6 +18,10 @@ const Info = () => {
     email: "",
     subject: "",
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -64,7 +68,7 @@ const Info = () => {
         </RubberBand>
       </Col>
       <Col xs={10} lg={4}>
-        <Flip top delay={1000}>
+        <Flip top delay={500}>
           <InputGroup className="mb-3">
             <InputGroup.Prepend>
               <InputGroup.Text id="name">Your Name</InputGroup.Text>
@@ -80,7 +84,7 @@ const Info = () => {
         </Flip>
       </Col>
       <Col xs={10} lg={4}>
-        <Flip top delay={1100}>
+        <Flip top delay={700}>
           <InputGroup className="mb-3">
             <InputGroup.Prepend>
               <InputGroup.Text id="email">Your Email</InputGroup.Text>
@@ -96,7 +100,7 @@ const Info = () => {
         </Flip>
       </Col>
       <Col xs={10}>
-        <Flip top delay={1200}>
+        <Flip top delay={800}>
           <InputGroup className="mb-3">
             <InputGroup.Prepend>
               <InputGroup.Text id="subject">
@@ -137,13 +141,12 @@ const Info = () => {
         </RubberBand>
       </Col>
       <Col xs={12} className="d-flex justify-content-around align-items-center">
-        <Flip top delay={1400}>
+        <Flip top delay={900}>
           <div>
             <button
               name="github"
               className="texts eamz-btn github-btn px-5 py-3"
-              onClick={openWindow}
-            >
+              onClick={openWindow}>
               <Image
                 name="github"
                 src="./images/github-icon.png"
@@ -155,8 +158,7 @@ const Info = () => {
             <button
               name="linkedin"
               className="texts eamz-btn linkedin-btn px-5 py-3"
-              onClick={openWindow}
-            >
+              onClick={openWindow}>
               <Image
                 name="linkedin"
                 src="./images/linkedin-icon.png"
@@ -168,8 +170,7 @@ const Info = () => {
             <button
               name="insta"
               className="texts eamz-btn instagram-btn px-5 py-3"
-              onClick={openWindow}
-            >
+              onClick={openWindow}>
               <Image
                 name="insta"
                 src="./images/instagram-icon.png"
@@ -188,9 +189,8 @@ const Info = () => {
       </Col>
       <Col
         xs={12}
-        className="margin-bottom-footer d-flex justify-content-center align-items-center"
-      >
-        <Flip top delay={1400}>
+        className="margin-bottom-footer d-flex justify-content-center align-items-center">
+        <Flip top delay={1000}>
           <button className="texts cv-btn eamz-btn" onClick={openFile}>
             Click Me
           </button>

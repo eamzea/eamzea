@@ -1,17 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import Bounce from "react-reveal/Bounce";
 import Flip from "react-reveal/Flip";
 
-const Home = () => {
+const Projects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const openWindow = (e) => {
     switch (e.target.id) {
       case "FrontRepoLendt":
         return window.open("https://github.com/eamzea/Presta-Front", "_blank");
-      case "Lendt":
-        return window.open("https://lendt.herokuapp.com/", "_blank");
       case "BackRepoLendt":
         return window.open("https://github.com/eamzea/Presta-Server", "_blank");
+      case "FrontRepoCalendar":
+        return window.open(
+          "https://github.com/eamzea/CalendarMERNApp",
+          "_blank"
+        );
+      case "Calendar":
+        return window.open(
+          "https://calendar-mern-eamz.herokuapp.com/",
+          "_blank"
+        );
+      case "BackRepoCalendar":
+        return window.open(
+          "https://github.com/eamzea/CalendarMERNAppBack",
+          "_blank"
+        );
       case "RepoMedik+":
         return window.open("https://github.com/eamzea/mediApp", "_blank");
       case "Medik+":
@@ -19,6 +36,11 @@ const Home = () => {
       case "RepoTracker":
         return window.open(
           "https://github.com/eamzea/ReactNavigationGeoApp",
+          "_blank"
+        );
+      case "RepoScratch":
+        return window.open(
+          "https://github.com/eamzea/ReactNativeScratchApp",
           "_blank"
         );
       case "Instagram":
@@ -31,8 +53,8 @@ const Home = () => {
   return (
     <Row className="justify-content-center">
       <Col xs={10}>
-        <Bounce delay={2100}>
-          <p className="titles text-white title-home">Projects</p>
+        <Bounce delay={500}>
+          <p className="titles text-white title-home">Web Projects</p>
         </Bounce>
       </Col>
       <Col xs={12}>
@@ -41,7 +63,7 @@ const Home = () => {
         </Bounce>
       </Col>
       <Col lg={6} xs={12} className="text-center">
-        <Flip top delay={2300}>
+        <Flip top delay={600}>
           <p className="titles h3 text-white text-center lendt-title">Lendt</p>
           <p className="texts text-white text-center">
             Web App to search stuffs and contact its owner
@@ -50,22 +72,13 @@ const Home = () => {
             <button
               className="texts eamz-btn lendt-btn"
               id="FrontRepoLendt"
-              onClick={openWindow}
-            >
+              onClick={openWindow}>
               Front Repo
             </button>
             <button
               className="texts eamz-btn lendt-btn"
-              id="Lendt"
-              onClick={openWindow}
-            >
-              Visit
-            </button>
-            <button
-              className="texts eamz-btn lendt-btn"
               id="BackRepoLendt"
-              onClick={openWindow}
-            >
+              onClick={openWindow}>
               Back Repo
             </button>
           </div>
@@ -80,7 +93,7 @@ const Home = () => {
         </Flip>
       </Col>
       <Col lg={6} xs={12} className="text-center">
-        <Flip top delay={2400}>
+        <Flip top delay={700}>
           <p className="titles h3 text-white text-center medik-title">Medik+</p>
           <p className="texts text-white text-center">
             Web App to search doctors and schedule an appointment
@@ -89,15 +102,13 @@ const Home = () => {
             <button
               className="texts eamz-btn medik-btn"
               id="RepoMedik+"
-              onClick={openWindow}
-            >
+              onClick={openWindow}>
               Repo
             </button>
             <button
               className="texts eamz-btn medik-btn"
               id="Medik+"
-              onClick={openWindow}
-            >
+              onClick={openWindow}>
               Visit
             </button>
           </div>
@@ -111,13 +122,54 @@ const Home = () => {
           />
         </Flip>
       </Col>
+      <Col xs={12}>
+        <Bounce delay={2200}>
+          <p className="titles text-white h2">Personal Projects</p>
+        </Bounce>
+      </Col>
+      <Col lg={6} xs={12} className="text-center">
+        <Flip top delay={600}>
+          <p className="titles h3 text-white text-center calendar-title">
+            Calendar
+          </p>
+          <p className="texts text-white text-center">Web to schedule events</p>
+          <div className="d-flex justify-content-around align-items-center">
+            <button
+              className="texts eamz-btn calendar-btn"
+              id="FrontRepoCalendar"
+              onClick={openWindow}>
+              Front Repo
+            </button>
+            <button
+              className="texts eamz-btn calendar-btn"
+              id="Calendar"
+              onClick={openWindow}>
+              Visit
+            </button>
+            <button
+              className="texts eamz-btn calendar-btn"
+              id="BackRepoCalendar"
+              onClick={openWindow}>
+              Back Repo
+            </button>
+          </div>
+          <Image
+            src="./images/lendt-project.png"
+            className="projects-img my-3"
+          />
+          <Image
+            src="./images/lendt-project1.png"
+            className="projects-img my-3"
+          />
+        </Flip>
+      </Col>
       <Col xs={10}>
-        <Bounce delay={2500}>
+        <Bounce delay={800}>
           <p className="titles text-white title-home">Mobile projects</p>
         </Bounce>
       </Col>
       <Col xs={12}>
-        <Bounce delay={2600}>
+        <Bounce delay={900}>
           <p className="titles text-white h2">React Native Projects</p>
         </Bounce>
       </Col>
@@ -133,14 +185,35 @@ const Home = () => {
             <button
               className="texts eamz-btn mobileApp-btn"
               id="RepoTracker"
-              onClick={openWindow}
-            >
+              onClick={openWindow}>
               Repo
             </button>
           </div>
-          <video loop autoPlay className="videos-projects">
+          <video loop className="videos-projects">
             <source
               src="https://res.cloudinary.com/dsrp4vbij/video/upload/v1590528106/EAMZ/tracker_uykhpt.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </Flip>
+      </Col>
+      <Col lg={6} xs={12} className="text-center">
+        <Flip top delay={2700}>
+          <p className="titles h3 text-white text-center mobileApp-title">
+            Scratch Game APP
+          </p>
+          <p className="texts text-white text-center">Simple Game</p>
+          <div className="d-flex justify-content-center align-items-center my-3">
+            <button
+              className="texts eamz-btn mobileApp-btn"
+              id="RepoScratch"
+              onClick={openWindow}>
+              Repo
+            </button>
+          </div>
+          <video loop className="videos-projects">
+            <source
+              src="https://res.cloudinary.com/dsrp4vbij/video/upload/v1602122642/EAMZ/ScratchGame_cloim1.mov"
               type="video/mp4"
             />
           </video>
@@ -149,7 +222,7 @@ const Home = () => {
       <Col xs={12} className="margin-bottom-footer">
         <Row>
           <Col xs={7} className="text-center">
-            <Flip top delay={2100}>
+            <Flip top delay={1000}>
               <Image
                 src="./images/instagram-profile.png"
                 className="instagram-img my-3"
@@ -157,15 +230,14 @@ const Home = () => {
             </Flip>
           </Col>
           <Col xs={5} className="d-flex flex-column justify-content-center">
-            <Bounce delay={2000}>
+            <Bounce delay={1100}>
               <p className="titles text-white title-home">Hobbies</p>
               <p className="titles text-white h2">Games</p>
               <div className="d-flex justify-content-center align-items-center">
                 <button
                   className="instagram-btn eamz-btn texts"
                   id="Instagram"
-                  onClick={openWindow}
-                >
+                  onClick={openWindow}>
                   Follow Me !
                 </button>
               </div>
@@ -177,4 +249,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Projects;
