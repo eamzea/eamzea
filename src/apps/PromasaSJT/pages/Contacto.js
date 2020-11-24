@@ -54,7 +54,6 @@ const Contacto = () => {
               <Form.Control
                 type="text"
                 placeholder="Juan Pérez"
-                className="contact-form"
                 name="name"
                 onChange={handleInfo}
                 className="contact-form"
@@ -114,6 +113,7 @@ const Contacto = () => {
         <Col xs={12}>
           <div id="maps">
             <iframe
+              title="map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.263911306122!2d-99.13159078509078!3d19.40099994671767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1feee7dcccff5%3A0x48c1ab37c7a98716!2sPromasa+STJ!5e0!3m2!1ses-419!2smx!4v1552598795633"
               style={{
                 border: "0",

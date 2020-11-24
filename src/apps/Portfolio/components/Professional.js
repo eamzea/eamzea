@@ -9,14 +9,6 @@ const Professional = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const viewPage = (e) => {
-    if (e.target.id === "digital") {
-      window.open("https://digital-key.herokuapp.com/", "_blank");
-    } else if (e.target.id === "promasa") {
-      window.open("https://promasa-sjt.herokuapp.com/", "_blank");
-    }
-  };
-
   const openFile = () => {
     window.open(
       "https://res.cloudinary.com/dsrp4vbij/image/upload/v1590528830/EAMZ/maikaiDesign_emmed6.pdf",
@@ -43,14 +35,10 @@ const Professional = () => {
           </p>
           <p className="texts text-white text-center h3">09/2020 - current</p>
           <p className="texts text-white text-center">
-            Solve and attend tickets from production web apps.
+            Add new functionality to a fintech web application developed with
+            Ruby on Rails.
             <br />
-            Implement new functionalities through requirements.
-            <br />
-            Analyze and re-factorizing unstable code.
-            <br />
-            Test new components added for development and logic added to
-            functionality.
+            Using Stimulus as JS library to improve performance
           </p>
         </Flip>
       </Col>
@@ -81,15 +69,19 @@ const Professional = () => {
           <p className="titles text-white text-center appwit-title">APPWIT</p>
           <p className="texts text-white text-center h3">11/2019 - 04/2020</p>
           <p className="texts text-white text-center">
-            Project 1: Design web page with Illustrator and Adobe Xd
-            (wireframes, mockups and prototypes).
+            Project 1
+            <br />
+            Design web page with Illustrator and Adobe Xd (wireframes, mockups
+            and prototypes).
             <br />
             Front End development with HTML, CSS, JavaScript, Angular,
             prioritizing the User Experience and boost User Interface.
             <br />
             <br />
-            Project 2: Design web page with Illustrator and Adobe Xd
-            (wireframes, mockups and prototypes).
+            Project 2
+            <br />
+            Design web page with Illustrator and Adobe Xd (wireframes, mockups
+            and prototypes).
             <br />
             Front End development with HTML, CSS, JavaScript, Angular,
             prioritizing the User Experience and boost User Interface.
@@ -97,8 +89,10 @@ const Professional = () => {
             Back End development with Firebase, Node and Express.
             <br />
             <br />
-            Project 3: Design web page with Illustrator and Adobe Xd
-            (wireframes, mockups and prototypes).
+            Project 3
+            <br />
+            Design web page with Illustrator and Adobe Xd (wireframes, mockups
+            and prototypes).
             <br />
             Front End development with React, prioritizing the User Experience
             and boost User Interface.
@@ -110,8 +104,10 @@ const Professional = () => {
             Firebase connection to manage users images/portfolio.
             <br />
             <br />
-            Project 4: Design web page with Illustrator and Adobe Xd
-            (wireframes, mockups and prototypes).
+            Project 4
+            <br />
+            Design web page with Illustrator and Adobe Xd (wireframes, mockups
+            and prototypes).
             <br />
             Front End development with React, prioritizing the User Experience
             and boost User Interface.

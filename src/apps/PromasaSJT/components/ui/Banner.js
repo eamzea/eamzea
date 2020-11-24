@@ -2,11 +2,9 @@ import React from "react";
 import { Row, Col, Button } from "react-bootstrap";
 import Pulse from "react-reveal/Pulse";
 import "../../PromasaSJT.css";
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
-  const { url } = useRouteMatch();
-
   return (
     <Row className="m-0 mt-5 mb-1 banner-container">
       <Col
