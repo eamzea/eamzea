@@ -1,0 +1,131 @@
+.titles {
+  font-family: "Lato", sans-serif;
+}
+
+.texts {
+  font-family: "Roboto", sans-serif;
+}
+
+.m-t-vh {
+  margin-top: 10vh;
+}
+
+.d-fixed {
+  position: fixed !important;
+  z-index: 5;
+}
+
+.digitalkey-btn {
+  color: rgb(55, 124, 131);
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s;
+}
+
+.digitalkey-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 10px #000000;
+}
+
+.digitalkey-btn:focus {
+  box-shadow: inset 0px 0px 5px 0px rgba(255, 255, 255, 0.25);
+  transform: scale(0.95);
+  outline: none;
+}
+
+.digitalkey-btn:active {
+  outline: none;
+}
+
+.nav-dk {
+  min-width: 100vw;
+}
+
+.navbar-nav a {
+  color: rgba(193, 198, 204, 1) !important;
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+.active-dk {
+  border-bottom: 1px solid rgba(41, 41, 41, 0.25);
+}
+
+.col-home {
+  min-height: 100vh;
+  /* z-index: -1; */
+}
+
+.img-home {
+  height: 75vh;
+}
+
+.about-page {
+  min-height: 100vh;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.advantages-list li {
+  margin: 20px 0;
+}
+
+.services-page-h {
+  height: 100vh;
+}
+
+.services-page {
+  background-color: rgb(55, 124, 131);
+}
+
+.input-group-text {
+  border: none !important;
+}
+
+.form-control {
+  border: none !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #000000 !important;
+}
+
+.textarea-info {
+  resize: none;
+}
+
+.ready-btn {
+  background: rgba(255, 255, 255, 1);
+}
+
+.img-social {
+  width: 50px;
+  cursor: pointer;
+}
+
+.social-link {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #377c83;
+  min-height: 10vh;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav a {
+    margin-right: 10px;
+  }
+
+  .img-home {
+    height: 50vh;
+  }
+
+  .img-social {
+    width: 25px;
+  }
+}
