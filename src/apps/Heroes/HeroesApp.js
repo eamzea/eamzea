@@ -1,11 +1,13 @@
 import React, { useReducer, useEffect } from 'react';
 import { AuthContext } from './auth/AuthContext';
 import { authReducer } from './auth/authReducer';
-import { Router, Switch } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 import { PrivateRoute } from './routers/PrivateRoute';
 import { PublicRoute } from './routers/PublicRoute';
 import DashboardRoutes from './routers/DashboardRoutes';
 import LoginScreen from './components/login/LoginScreen';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const init = () => {
   return (

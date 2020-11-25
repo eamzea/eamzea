@@ -1,15 +1,17 @@
-import React, { useEffect } from "react";
-import "./Portfolio.css";
-import { Switch, Route } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useEffect } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import Navbar from "./components/ui/Navbar";
-import Header from "./components/ui/Header";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import Academic from "./components/Academic";
-import Professional from "./components/Professional";
-import Info from "./components/Info";
+import Navbar from './components/ui/Navbar';
+import Header from './components/ui/Header';
+import Home from './components/Home';
+import Projects from './components/Projects';
+import Academic from './components/Academic';
+import Professional from './components/Professional';
+import Info from './components/Info';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Portfolio.css';
 
 const PortfolioApp = () => {
   useEffect(() => {

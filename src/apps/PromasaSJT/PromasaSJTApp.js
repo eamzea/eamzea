@@ -1,16 +1,18 @@
-import React, { useEffect } from "react";
-import "./PromasaSJT.css";
-import { Switch, Route, useRouteMatch } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useEffect } from 'react';
+import { Switch, Route, useRouteMatch } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import NavP from "./components/ui/NavP";
-import FooterP from "./components/ui/FooterP";
-import Home from "./pages/Home";
-import Persianas from "./pages/Persianas";
-import Pisos from "./pages/Pisos";
-import Alfombras from "./pages/Alfombras";
-import Contacto from "./pages/Contacto";
-import FloatLink from "../Portfolio/components/ui/FloatLink";
+import NavP from './components/ui/NavP';
+import FooterP from './components/ui/FooterP';
+import Home from './pages/Home';
+import Persianas from './pages/Persianas';
+import Pisos from './pages/Pisos';
+import Alfombras from './pages/Alfombras';
+import Contacto from './pages/Contacto';
+import FloatLink from '../Portfolio/components/ui/FloatLink';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './PromasaSJT.css';
 
 const PromasaSJTApp = () => {
   const { path } = useRouteMatch();
