@@ -1,9 +1,9 @@
 .titles {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .texts {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .eamz-btn {
@@ -96,7 +96,7 @@
 
 .text-home {
   font-size: 40px;
-  color: "white";
+  color: 'white';
 }
 
 .margin-bottom-footer {
@@ -197,6 +197,24 @@
     90deg,
     rgb(3, 117, 162) 0%,
     rgba(3, 90, 162, 0.25) 100%
+  );
+}
+
+.heroes-title {
+  background: linear-gradient(
+    270deg,
+    rgb(255 7 7) 0%,
+    rgba(142, 142, 142, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroes-btn {
+  background: linear-gradient(
+    270deg,
+    rgb(255 7 7) 0%,
+    rgba(142, 142, 142, 0.25) 100%
   );
 }
 
@@ -495,6 +513,27 @@
 .float-link span,
 .float-link-show span {
   padding: 0px 10px;
+}
+
+@media (max-width: 768px) {
+  .float-link {
+    animation: show-link-mobile 2s linear;
+    right: -30%;
+  }
+}
+
+@keyframes show-link-mobile {
+  0% {
+    right: -20%;
+  }
+
+  50% {
+    right: -35%;
+  }
+
+  100% {
+    right: -30%;
+  }
 }
 
 @keyframes show-link {

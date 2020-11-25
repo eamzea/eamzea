@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
-import Fade from "react-reveal/Fade";
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 
 const FloatLink = () => {
   const [show, toggleShow] = useState(false);
@@ -9,7 +9,7 @@ const FloatLink = () => {
 
   const handleLink = () => {
     if (show) {
-      history.push("/");
+      history.push('/');
     } else {
       toggleShow(true);
     }
@@ -17,10 +17,11 @@ const FloatLink = () => {
 
   return (
     <div
-      className={show ? "float-link-show" : "float-link"}
-      onClick={handleLink}>
+      className={show ? 'float-link-show' : 'float-link'}
+      onClick={handleLink}
+    >
       {show ? (
-        <Fade left>
+        <Fade left wait={1000}>
           <div onClick={() => {}}>
             <span>
               <i className="fas fa-chevron-left"></i>

@@ -1,50 +1,51 @@
-import React, { useEffect } from "react";
-import { Row, Col, Image } from "react-bootstrap";
-import Bounce from "react-reveal/Bounce";
-import Flip from "react-reveal/Flip";
+import React, { useEffect } from 'react';
+import { Row, Col, Image } from 'react-bootstrap';
+import Bounce from 'react-reveal/Bounce';
+import Flip from 'react-reveal/Flip';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const openWindow = (e) => {
+  const openWindow = e => {
     switch (e.target.id) {
-      case "FrontRepoLendt":
-        return window.open("https://github.com/eamzea/Presta-Front", "_blank");
-      case "BackRepoLendt":
-        return window.open("https://github.com/eamzea/Presta-Server", "_blank");
-      case "FrontRepoCalendar":
+      case 'FrontRepoLendt':
+        return window.open('https://github.com/eamzea/Presta-Front', '_blank');
+      case 'BackRepoLendt':
+        return window.open('https://github.com/eamzea/Presta-Server', '_blank');
+      case 'FrontRepoCalendar':
         return window.open(
-          "https://github.com/eamzea/CalendarMERNApp",
-          "_blank"
+          'https://github.com/eamzea/CalendarMERNApp',
+          '_blank'
         );
-      case "Calendar":
+      case 'Calendar':
         return window.open(
-          "https://calendar-mern-eamz.herokuapp.com/",
-          "_blank"
+          'https://calendar-mern-eamz.herokuapp.com/',
+          '_blank'
         );
-      case "BackRepoCalendar":
+      case 'BackRepoCalendar':
         return window.open(
-          "https://github.com/eamzea/CalendarMERNAppBack",
-          "_blank"
+          'https://github.com/eamzea/CalendarMERNAppBack',
+          '_blank'
         );
-      case "RepoMedik+":
-        return window.open("https://github.com/eamzea/mediApp", "_blank");
-      case "Medik+":
-        return window.open("https://medikplus.herokuapp.com/", "_blank");
-      case "RepoTracker":
+      case 'RepoMedik+':
+        return window.open('https://github.com/eamzea/mediApp', '_blank');
+      case 'Medik+':
+        return window.open('https://medikplus.herokuapp.com/', '_blank');
+      case 'RepoTracker':
         return window.open(
-          "https://github.com/eamzea/ReactNavigationGeoApp",
-          "_blank"
+          'https://github.com/eamzea/ReactNavigationGeoApp',
+          '_blank'
         );
-      case "RepoScratch":
+      case 'RepoScratch':
         return window.open(
-          "https://github.com/eamzea/ReactNativeScratchApp",
-          "_blank"
+          'https://github.com/eamzea/ReactNativeScratchApp',
+          '_blank'
         );
-      case "Instagram":
-        return window.open("https://www.instagram.com/eamzdev/", "_blank");
+      case 'Instagram':
+        return window.open('https://www.instagram.com/eamzdev/', '_blank');
       default:
         return null;
     }
@@ -72,13 +73,15 @@ const Projects = () => {
             <button
               className="texts eamz-btn lendt-btn"
               id="FrontRepoLendt"
-              onClick={openWindow}>
+              onClick={openWindow}
+            >
               Front Repo
             </button>
             <button
               className="texts eamz-btn lendt-btn"
               id="BackRepoLendt"
-              onClick={openWindow}>
+              onClick={openWindow}
+            >
               Back Repo
             </button>
           </div>
@@ -102,13 +105,15 @@ const Projects = () => {
             <button
               className="texts eamz-btn medik-btn"
               id="RepoMedik+"
-              onClick={openWindow}>
+              onClick={openWindow}
+            >
               Repo
             </button>
             <button
               className="texts eamz-btn medik-btn"
               id="Medik+"
-              onClick={openWindow}>
+              onClick={openWindow}
+            >
               Visit
             </button>
           </div>
@@ -137,19 +142,22 @@ const Projects = () => {
             <button
               className="texts eamz-btn calendar-btn"
               id="FrontRepoCalendar"
-              onClick={openWindow}>
+              onClick={openWindow}
+            >
               Front Repo
             </button>
             <button
               className="texts eamz-btn calendar-btn"
               id="Calendar"
-              onClick={openWindow}>
+              onClick={openWindow}
+            >
               Visit
             </button>
             <button
               className="texts eamz-btn calendar-btn"
               id="BackRepoCalendar"
-              onClick={openWindow}>
+              onClick={openWindow}
+            >
               Back Repo
             </button>
           </div>
@@ -159,6 +167,36 @@ const Projects = () => {
           />
           <Image
             src="./images/portfolio/calendar-view.png"
+            className="projects-img my-3"
+          />
+        </Flip>
+      </Col>
+      <Col lg={6} xs={12} className="text-center">
+        <Flip top delay={500}>
+          <p className="titles h3 text-white text-center heroes-title">
+            Heroes App
+          </p>
+          <p className="texts text-white text-center">
+            App to find Marvel or DC Heroes
+          </p>
+          <div className="d-flex justify-content-around align-items-center">
+            <button
+              className="texts eamz-btn heroes-btn"
+              id="FrontRepoCalendar"
+              onClick={openWindow}
+            >
+              Repo
+            </button>
+            <Link to="/heroes">
+              <button className="texts eamz-btn heroes-btn">Visit</button>
+            </Link>
+          </div>
+          <Image
+            src="./images/portfolio/heroesApp-home.png"
+            className="projects-img my-3"
+          />
+          <Image
+            src="./images/portfolio/heroesApp-hero.png"
             className="projects-img my-3"
           />
         </Flip>
@@ -185,7 +223,8 @@ const Projects = () => {
             <button
               className="texts eamz-btn mobileApp-btn"
               id="RepoTracker"
-              onClick={openWindow}>
+              onClick={openWindow}
+            >
               Repo
             </button>
           </div>
@@ -207,7 +246,8 @@ const Projects = () => {
             <button
               className="texts eamz-btn mobileApp-btn"
               id="RepoScratch"
-              onClick={openWindow}>
+              onClick={openWindow}
+            >
               Repo
             </button>
           </div>
@@ -237,7 +277,8 @@ const Projects = () => {
                 <button
                   className="instagram-btn eamz-btn texts"
                   id="Instagram"
-                  onClick={openWindow}>
+                  onClick={openWindow}
+                >
                   Follow Me !
                 </button>
               </div>
