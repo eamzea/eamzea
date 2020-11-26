@@ -12,6 +12,7 @@ import Info from './components/Info';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Portfolio.css';
+import NotFound from './components/ui/NotFound';
 
 const PortfolioApp = () => {
   useEffect(() => {
@@ -32,6 +33,7 @@ const PortfolioApp = () => {
             <Route path="/academic" component={Academic} />
             <Route path="/professional" component={Professional} />
             <Route path="/information" component={Info} />
+            <Route path="*" component={NotFound} />
           </Switch>
         </Col>
       </Row>

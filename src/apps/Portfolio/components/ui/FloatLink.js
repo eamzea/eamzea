@@ -9,6 +9,7 @@ const FloatLink = () => {
 
   const handleLink = () => {
     if (show) {
+      console.log(history);
       history.push('/');
     } else {
       toggleShow(true);

@@ -540,6 +540,10 @@
   }
 }
 
+.not-found {
+  width: 100%;
+}
+
 @keyframes show-link-mobile {
   0% {
     right: -20%;
