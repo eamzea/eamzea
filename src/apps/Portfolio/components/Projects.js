@@ -32,8 +32,13 @@ const Projects = () => {
         );
       case 'RepoMedik+':
         return window.open('https://github.com/eamzea/mediApp', '_blank');
-      case 'Medik+':
-        return window.open('https://medikplus.herokuapp.com/', '_blank');
+      case 'RepoHeroes':
+        return window.open(
+          'https://github.com/eamzea/hero-react-app',
+          '_blank'
+        );
+      case 'RepoJournal':
+        return window.open('https://github.com/eamzea/journal-app', '_blank');
       case 'RepoTracker':
         return window.open(
           'https://github.com/eamzea/ReactNavigationGeoApp',
@@ -109,13 +114,6 @@ const Projects = () => {
             >
               Repo
             </button>
-            <button
-              className="texts eamz-btn medik-btn"
-              id="Medik+"
-              onClick={openWindow}
-            >
-              Visit
-            </button>
           </div>
           <Image
             src="./images/portfolio/medik-project.png"
@@ -182,7 +180,7 @@ const Projects = () => {
           <div className="d-flex justify-content-around align-items-center">
             <button
               className="texts eamz-btn heroes-btn"
-              id="FrontRepoCalendar"
+              id="RepoHeroes"
               onClick={openWindow}
             >
               Repo
@@ -197,6 +195,36 @@ const Projects = () => {
           />
           <Image
             src="./images/portfolio/heroesApp-hero.png"
+            className="projects-img my-3"
+          />
+        </Flip>
+      </Col>
+      <Col lg={6} xs={12} className="text-center">
+        <Flip top delay={500}>
+          <p className="titles h3 text-white text-center journal-title">
+            Journal App
+          </p>
+          <p className="texts text-white text-center">
+            App to save important notes
+          </p>
+          <div className="d-flex justify-content-around align-items-center">
+            <button
+              className="texts eamz-btn journal-btn"
+              id="RepoJournal"
+              onClick={openWindow}
+            >
+              Repo
+            </button>
+            <Link to="/journal">
+              <button className="texts eamz-btn journal-btn">Visit</button>
+            </Link>
+          </div>
+          <Image
+            src="./images/portfolio/journalApp-home.png"
+            className="projects-img my-3"
+          />
+          <Image
+            src="./images/portfolio/journalApp-note.png"
             className="projects-img my-3"
           />
         </Flip>
