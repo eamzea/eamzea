@@ -49,6 +49,11 @@ const Projects = () => {
           'https://github.com/eamzea/ReactNativeScratchApp',
           '_blank'
         );
+      case 'RepoTicTacToe':
+        return window.open(
+          'https://github.com/eamzea/ReactNativeTicTacToe',
+          '_blank'
+        );
       case 'Instagram':
         return window.open('https://www.instagram.com/eamzdev/', '_blank');
       default:
@@ -282,6 +287,29 @@ const Projects = () => {
           <video loop className="videos-projects" controls>
             <source
               src="https://res.cloudinary.com/dsrp4vbij/video/upload/v1602122642/EAMZ/ScratchGame_cloim1.mov"
+              type="video/mp4"
+            />
+          </video>
+        </Flip>
+      </Col>
+      <Col lg={6} xs={12} className="text-center">
+        <Flip top delay={500}>
+          <p className="titles h3 text-white text-center mobileApp-title">
+            TicTacToe Game APP
+          </p>
+          <p className="texts text-white text-center">Simple Game</p>
+          <div className="d-flex justify-content-center align-items-center my-3">
+            <button
+              className="texts eamz-btn mobileApp-btn"
+              id="RepoTicTacToe"
+              onClick={openWindow}
+            >
+              Repo
+            </button>
+          </div>
+          <video loop className="videos-projects" controls>
+            <source
+              src="https://res.cloudinary.com/dsrp4vbij/video/upload/v1606502438/EAMZ/TicTacToe_smwrmd.mp4"
               type="video/mp4"
             />
           </video>
