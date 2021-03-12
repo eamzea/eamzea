@@ -16,11 +16,11 @@ const DashboardRoutes = () => {
       <NavbarHeroes />
       <Container fluid>
         <Switch>
-          <Route exact path={`${path}/marvel`} component={MarvelScreen} />
-          <Route exact path={`${path}/hero/:heroId`} component={HeroScreen} />
-          <Route exact path={`${path}/dc`} component={DcScreen} />
-          <Route exact path={`${path}/search`} component={SearchScreen} />
-          <Redirect to={`${path}/marvel`} />
+          <Route exact path={`/heroes/marvel`} component={MarvelScreen} />
+          <Route exact path={`/heroes/hero/:heroId`} component={HeroScreen} />
+          <Route exact path={`/heroes/dc`} component={DcScreen} />
+          <Route exact path={`/heroes/search`} component={SearchScreen} />
+          <Redirect to={`/heroes/marvel`} />
         </Switch>
         <FloatLink />
       </Container>

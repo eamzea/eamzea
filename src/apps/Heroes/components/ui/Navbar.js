@@ -16,7 +16,7 @@ const NavbarHeroes = () => {
     dispatch({
       type: types.logout,
     });
-    history.replace('/login');
+    history.replace('/heroes/login');
   };
 
   return (

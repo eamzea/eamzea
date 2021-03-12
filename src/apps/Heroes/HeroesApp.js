@@ -30,7 +30,7 @@ const HeroesApp = () => {
         <Switch>
           <PublicRoute
             exact
-            path="/login"
+            path="/heroes/login"
             component={LoginScreen}
             isAuthenticated={user.logged}
           />
