@@ -9,8 +9,7 @@ const FloatLink = () => {
 
   const handleLink = () => {
     if (show) {
-      console.log(history);
-      history.push('/');
+      history.replace('/projects');
     } else {
       toggleShow(true);
     }
@@ -41,30 +40,6 @@ const FloatLink = () => {
         </Fade>
       )}
     </div>
-    // <
-    //   className="float-link"
-    //   onMouseEnter={handleShow}
-    //   onMouseLeave={() => toggleShow(false)}>
-    //   {show ? (
-    //     <Fade right when={show}>
-    //       <div onClick={() => {}}>
-    //         <span>
-    //           <i className="fas fa-chevron-left"></i>
-    //         </span>
-    //         Return to Portfolio
-    //       </div>
-    //     </Fade>
-    //   ) : (
-    //     <Fade right>
-    //       <div onClick={() => {}}>
-    //         <span>
-    //           <i className="fas fa-chevron-left"></i>
-    //         </span>
-    //         Return to Portfolio
-    //       </div>
-    //     </Fade>
-    //   )}
-    // </>
   );
 };
 

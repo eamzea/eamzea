@@ -5,6 +5,7 @@ import DigitalKeyApp from '../apps/DigitalKey/DigitalKeyApp';
 import PromasaSJTApp from '../apps/PromasaSJT/PromasaSJTApp';
 import HeroesApp from '../apps/Heroes/HeroesApp';
 import JournalApp from '../apps/Journal/JournalApp';
+import CalendarApp from '../apps/Calendar/CalendarApp';
 import 'animate.css';
 
 const AppRouter = () => {
@@ -15,6 +16,7 @@ const AppRouter = () => {
         <Route path="/promasaSJT" component={PromasaSJTApp} />
         <Route path="/heroes" component={HeroesApp} />
         <Route path="/journal" component={JournalApp} />
+        <Route path="/calendar" component={CalendarApp} />
         <Route path="/" component={PortfolioApp} />
       </Switch>
     </Router>

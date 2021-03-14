@@ -1,6 +1,6 @@
 import React from 'react';
 import NavbarHeroes from '../components/ui/Navbar';
-import { Switch, Route, Redirect, useRouteMatch } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import MarvelScreen from '../components/marvel/MarvelScreen';
 import HeroScreen from '../components/heroes/HeroScreen';
 import DcScreen from '../components/dc/DcScreen';
@@ -9,8 +9,6 @@ import SearchScreen from '../components/search/SearchScreen';
 import FloatLink from '../../Portfolio/components/ui/FloatLink';
 
 const DashboardRoutes = () => {
-  const { path } = useRouteMatch();
-
   return (
     <>
       <NavbarHeroes />

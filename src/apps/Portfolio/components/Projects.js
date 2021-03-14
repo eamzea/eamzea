@@ -20,11 +20,6 @@ const Projects = () => {
           'https://github.com/eamzea/CalendarMERNApp',
           '_blank'
         );
-      case 'Calendar':
-        return window.open(
-          'https://calendar-mern-eamz.herokuapp.com/',
-          '_blank'
-        );
       case 'BackRepoCalendar':
         return window.open(
           'https://github.com/eamzea/CalendarMERNAppBack',
@@ -149,13 +144,9 @@ const Projects = () => {
             >
               Front Repo
             </button>
-            <button
-              className="texts eamz-btn calendar-btn"
-              id="Calendar"
-              onClick={openWindow}
-            >
-              Visit
-            </button>
+            <Link to="/calendar">
+              <button className="texts eamz-btn calendar-btn">Visit</button>
+            </Link>
             <button
               className="texts eamz-btn calendar-btn"
               id="BackRepoCalendar"

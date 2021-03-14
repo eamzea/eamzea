@@ -1,9 +1,9 @@
 .titles {
-  font-family: "Barlow", sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 .texts {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .promasa-color {
@@ -27,7 +27,7 @@
 }
 
 .banner-container {
-  background-image: url("/images/banner.png");
+  /* background-image: url('/promasaSJT/banner.png'); */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
