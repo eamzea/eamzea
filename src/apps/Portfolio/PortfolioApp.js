@@ -29,10 +29,10 @@ const PortfolioApp = () => {
           <Header />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/academic" component={Academic} />
-            <Route path="/professional" component={Professional} />
-            <Route path="/information" component={Info} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/academic" component={Academic} />
+            <Route exact path="/professional" component={Professional} />
+            <Route exact path="/information" component={Info} />
             <Route path="*" component={NotFound} />
           </Switch>
         </Col>
