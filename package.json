@@ -17,7 +17,7 @@
     "firebase": "^8.1.1",
     "fontsource-roboto": "^4.0.0",
     "moment": "^2.29.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^9.0.0",
     "query-string": "^4.3.4",
     "react": "^16.13.1",
     "react-big-calendar": "^0.33.2",
